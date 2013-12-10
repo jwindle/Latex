@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{marginnote}
+% \usepackage{url}
+% \usepackage{graphicx}
+% \usepackage{natbib}
+% \usepackage{outlines}
+% \usepackage{parskip}
+% \usepackage{lineno}
+% \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+% \input{commands2}
+
+% To keep track of points.
+\newcounter{parnum}
+\newcommand{\npoint}{%
+  \noindent\refstepcounter{parnum}%
+  \makebox[0.5in][c]{\textbf{\arabic{parnum}.}} %
+  \marginnote{\small\ttfamily\the\inputlineno}}
+% uncomment if you do not want point numbers.
+% \renewcommand{\npoint}{}
+
+% Set Fancy Style
+%\pagestyle{fancy}
+%\lhead{Left Header}
+%\rhead{Right Header}
+
+\begin{document}
+
+% Set the counter
+% \setcounter{section}{0}
+
+\npoint Point 1.
+
+% If you have a bibliography.
+% The file withe bibliography is name.bib.
+% \bibliographystyle{abbrvnat}
+% \bibliography{name}{}
+
+\end{document}
